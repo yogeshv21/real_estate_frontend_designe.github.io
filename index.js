@@ -175,3 +175,16 @@ document.querySelector("#menu").addEventListener("click", function(){
         flag = 0;
     }
 })
+
+window.onscroll = function(){
+    var top = window.scrollY;
+    console.log(top);
+    if(top>210){
+        document.querySelector("#nav").style.top = "-100%"
+        document.querySelector("#nav2").style.top = "0%"
+    }
+    else{
+        document.querySelector("#nav").style.top = "0%"
+        document.querySelector("#nav2").style.top = "-100%"
+    }
+}
