@@ -161,7 +161,7 @@ document.querySelector("#menu").addEventListener("click", function(){
         document.querySelector("#menudiv").style.display = "initial"
         flag = 1;
         gsap.from("#menudiv", {
-            height: 0,
+             width: 0,
             duration: .5
             
         })
